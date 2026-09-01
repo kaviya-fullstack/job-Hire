@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="width: 50%; align-items: center;justify-content: center;display: flex;margin-left: 25%;margin-top: 3%; background-color: rgb(110, 106, 106);">
+  <h2 style="text-decoration-line: underline;">Update Profile</h2>
+
+<form  method="POST">
+    {% csrf_token %}
+    <label for="name">Name:</label>
+      <input type="text" name="name" value="{{job.name}}" required>
+     <label for="email">Email:</label>
+     <input type="email" name="email" value="{{job.email}}"  required>
+     <label for="phone">Phone:</label>
+     <input type="number" name="phone" value="{{job.phone}}"  required>
+     <button  type="submit">Click to update</button>
+     <p style="align-items: center;justify-content: center;display: flex;"><a style="color: rgb(74, 70, 70); text-decoration-line: underline;" href="{% url 'list' %}">if you don't update,Go to back!</a></p>
+    
+</form>
+</body>
+</html>
+
+
+{% endblock %}

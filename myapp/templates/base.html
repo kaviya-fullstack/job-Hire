@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django CRUD</title>
+    <link rel="stylesheet" href="{% static '/pro.css' %}">
+</head>
+<body>
+<div class="container">
+    {% block content %}
+    <a href="{% url 'list' %}" class="add-btn">View Students</a>
+    {% endblock %}
+</div>
+</body>
+</html>

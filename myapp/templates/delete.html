@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="width: 60%; margin-left: 20%;margin-top: 70px;">
+    <h2 style="text-decoration-line: underline;" >Delete Profile</h2><br><br>
+
+<p>Are you sure you want to delete <b>{{ jobs.name }}</b>?</p><br>
+
+<form method="POST">
+    {% csrf_token %}
+    <button style="border-radius: 6px;" class="delete"  type="submit">Delete</button><br>
+</form>
+
+<br><br>
+<a style="align-items: center;justify-content: center;display: flex;color: rgb(6, 75, 6);text-decoration-line: underline;" href="{% url 'list' %}" >If you don't delete,go to back.!</a>
+</body>
+</html>
+
+
+{% endblock %}

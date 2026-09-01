@@ -1,0 +1,151 @@
+body {
+  margin: 0 ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f0f6ff;
+}
+
+.container {
+    width: 95%;
+    margin: 10px auto;
+    background: rgb(228, 222, 222);
+     
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color:black;
+    text-decoration-line: underline;
+  
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+   
+    padding: 12px;
+    background-color: rgb(17, 100, 17);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(28, 180, 28);
+    color:white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.add-btn {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: rgb(115, 110, 110);
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 15%;
+}
+.add-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.edit {
+    background-color: #075732;
+    padding: 8px 15px;
+  border-radius: 6px;
+   border: 1px solid black;
+ 
+ 
+}
+.edit:hover{
+    background-color: #118a51;
+}
+
+.delete {
+    background-color: #941f2a;
+    padding: 8px 15px;
+    border-radius: 6px;
+       border: 1px solid black;
+
+}
+.delete:hover{
+    background-color:rgb(210, 64, 64);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+}
+
+th {
+    background-color: black;
+    color: black;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: white;
+
+}
+h1{
+    text-align: center;
+    justify-content:center;
+    display: flex;
+    padding-top: 18px;
+    font-size: 55px;
+    text-decoration-line: underline;
+   text-decoration-color: black;
+   text-decoration-style: underline;
+
+   text-decoration-thickness: 8px;
+   padding-bottom: 0px;
+   
+   
+
+}
+b{
+    color: #08331e;
+}
+
+.crea {
+    width: 50%;
+    margin: 10px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 15px 15px 15px rgba(0.1, 0.1, 0.1, 0.1);
+}
+.job{
+    background-color: rgb(221, 215, 215);
+    background-image : linear-gradient(rgb(228, 222, 222),white,grey);
+    
+}
+.call{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 12px;
+    color: rgb(80, 76, 76);
+
+}
